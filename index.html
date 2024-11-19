@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTREGA 3 DISEÑO WEB: IRIA COBAS LORENZO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-...hash..." crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css">
+   
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"> <img src="imagenes/LOGO.png" alt="logo">Iria Cobas</a>
+      <button class="navbar-toggler" type="button" 
+
+   data-bs-toggle="collapse" data-bs-target="#miMenu" >
+   <span class="bi bi-menu-up"></span> 
+      </button>
+      <div class="collapse navbar-collapse" id="miMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="https://contacts.google.com/">Contacto</a>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Redes sociales
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="http://instagram.com">Instagram</a></li>
+             <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="http://facebook.com">Facebook</a></li>
+            </ul>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav> 
+
+<header class="container-fluid">
+  <div class="container">
+  <img src="imagenes/IMAGEN1.jpg" class="img-fluid">
+  </div>
+<h1 class="display-3 text-center text-uppercase border border-top-0">Un paseo por Roma</h1>
+<h3 class="lead text-center">¿Por qué elegir la capital italiana como próximo destino vacacional?</h3>
+</header>
+
+<main class="container-lg bg-subtle text-dark">
+  <div class="row justify-content-between align-items-start">
+      <div class="col">
+          <h2>Su gastronomía</h2>
+          <p>La cocina romana es deliciosa y variada, con platos emblemáticos como la <em>pasta cacio e pepe</em>, la carbonara, la <em>pizza al taglio</em> y, por supuesto, el <em>gelato</em></p>
+      </div> 
+      <div class="col">
+          <h2>Su historia</h2>
+          <p>Desde el Coliseo, el Foro Romano y el Panteón, hasta el Vaticano, la ciudad está llena de monumentos históricos que datan de más de 2,000 años.</p>
+      </div> 
+      <div class="col">
+          <h2>Su arte y cultura</h2>
+          <p>Alberga algunas de las obras de arte más importantes de la humanidad, como los frescos de la Capilla Sixtina de Miguel Ángel y las esculturas de Bernini.</p>
+      </div> 
+      <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#miModal"> Cubrir formulario para más información:
+      </button>
+  </div>    
+
+<section class="mt-3 w-100 row justify-content-around">
+  <div class="col-md-12 col-lg-3">
+  <img src="imagenes/IMAGEN2.jpg" class="img-fluid img-thumbnail" alt="foto 1">  
+<p>Existen diferentes tipos de restaurantes en Roma: las trattorias y Osterias, que son restaurantes familiares y acogedores que ofrecen platos caseros de la cocina romana tradicional; las pizzerías; y los ristorantes, que son más formales, con menús que incluyen platos romanos y especialidades italianas en general.</p>
+  </div>
+
+  <div class="col-md-5 col-lg-3">
+    <img src="imagenes/IMAGEN3.jpg" class="img-fluid img-thumbnail" alt="foto 2">
+<p>El Coliseo romano fue el mayor anfiteatro del Imperio Romano que se utilizaba para luchas de gladiadores, cacerías de animales salvajes, ejecuciones públicas y recreaciones de batallas. Era una muestra del poder, riqueza y dominio del Imperio. Actualmente, es Patrimonio de la Humanidad por la UNESCO y, desde 2007, es una de las Nuevas Siete Maravillas del Mundo.</p>
+  </div>
+  <div class="col-md-5 col-lg-3">
+    <img src="imagenes/IMAGEN4.jpg" class="img-fluid img-thumbnail" alt="foto 3 ">
+<p>La Fontana di Trevi  es uno de los monumentos más icónicos y visitados de Roma. Como muchas fuentes de Roma, no solo tenía un propósito decorativo, sino que también proporcionaba agua potable a los ciudadanos. Cuenta la leyenda que. si lanzas una moneda al agua de espaldas, garantizas tu regreso a esta ciudad.</p>
+  </div>
+</section>
+</main>
+
+<div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="miModalLabel">Formulario</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body">
+        <form action="codigo.php" class="needs-validation" method="post" novalidate>
+          <!-- Nombre y Apellido -->
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre y Apellido</label>
+            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Escribe tu nombre completo" required>
+            <div class="invalid-feedback">Por favor, introduce tu nombre completo.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="ejemplo@correo.com" required>
+            <div class="invalid-feedback">Por favor, introduce un email válido.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="edad" class="form-label">Edad</label>
+            <input type="number" name="edad" id="edad" class="form-control" min="1" max="120" placeholder="Escribe tu edad" required>
+            <div class="invalid-feedback">La edad debe ser un número entre 1 y 120.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="nacionalidad" class="form-label">Nacionalidad</label>
+            <select name="nacionalidad" id="nacionalidad" class="form-select" required>
+              <option value="" disabled selected>Selecciona tu nacionalidad</option>
+              <option value="mexicana">Mexicana</option>
+              <option value="española">Española</option>
+              <option value="argentina">Argentina</option>
+              <option value="otra">Otra</option>
+            </select>
+            <div class="invalid-feedback">Por favor, selecciona tu nacionalidad.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar Formulario</button>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  (function () {
+    'use strict';
+    const forms = document.querySelectorAll('.needs-validation');
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+
+    const nombreInput = document.getElementById('nombre');
+    nombreInput.addEventListener('input', () => {
+      if (nombreInput.value.length < 3) {
+        nombreInput.setCustomValidity('El nombre debe tener al menos 3 caracteres.');
+        nombreInput.classList.add('is-invalid');
+      } else {
+        nombreInput.setCustomValidity('');
+        nombreInput.classList.remove('is-invalid');
+      }
+    });
+  })();
+</script>
+</body>
+</html>
